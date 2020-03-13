@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bjt"
+    tools:context="com.example.a97263.musicplayer.RollActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="#f6f6f6">
+
+                    <!--轮播图-->
+                    <RelativeLayout
+                        android:id="@+id/topPanel_vpg"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+
+                     >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/ViewPage_Detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:flipInterval="30"
+                            android:persistentDrawingCache="animation" />
+
+                        <LinearLayout
+                            android:id="@+id/point_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"></LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout android:gravity="center"
+
+                    >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow android:layout_marginHorizontal="33dp">
+                            <ImageButton
+
+                                android:src="@drawable/fm"
+                                android:background="@null"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_margin="5dp" />
+
+                            <ImageButton
+
+                                android:src="@drawable/index_logo_hits"
+                                android:background="@null"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_margin="5dp" />
+
+                            <ImageButton
+                                android:src="@drawable/index_logo_mix"
+                                android:background="@null"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_margin="5dp" />
+
+                            <ImageButton
+                                android:src="@drawable/index_logo_chart"
+                                android:background="@null"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_margin="5dp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_marginTop="-5dp" android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="PrivateFM" />
+
+                    <TextView
+                        android:layout_marginLeft="-8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Hits" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="Mix" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-20dp"
+                        android:gravity="right"
+                        android:text="Charts" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/loginimg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Recommended Song list:" />
+
+                <LinearLayout android:gravity="center_horizontal">
+
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/zj22" />
+
+                    <ImageButton
+                        android:src="@drawable/zj7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp" />
+
+                    <ImageButton
+                        android:src="@drawable/zj555"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_marginTop="-5dp" android:layout_marginLeft="1dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="If there's a ballad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:text="Suitable for reading" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center"
+                        android:text="Just love you" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Let it snow"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+                                android:id="@+id/btu_1"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Yellow"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Because of you"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Better man"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Lemon"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="More than I can say"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Free loop"
+                                android:textColor="#F7EEDD" />
+
+                            <Button
+
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:onClick="ppp"
+                                android:text="Play"
+                                android:textColor="#F7EEDD" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

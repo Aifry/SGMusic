@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/loadin_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a97263.musicplayer.RegisterActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/text_uname"
+            android:hint="Username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/text_pwd"
+            android:hint="Password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/text_cpwd"
+            android:hint="Confirm Password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/register_btu"
+            android:background="@null"
+            android:onClick="registerBtu"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
